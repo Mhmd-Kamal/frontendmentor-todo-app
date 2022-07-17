@@ -12,9 +12,15 @@ Have fun! 🚀
 ## Running the project
 
 you will need nodejs and npm to run this project.
-1- git clone this repository.
-2- cd into the folder.
-3- run '''yarn install''' to install all the dependencies.
-4- run '''yarn dev''' to start the development server, or run '''yarn start''' to start the project.
-5- open the browser and navigate to <http://localhost:3000/>
-6- you should see the todo app.
+
+1. git clone this repository.
+
+2. cd into the folder.
+
+3. run '''yarn install''' to install all the dependencies.
+
+4. run '''yarn dev''' to start the development server, or run '''yarn start''' to start the project.
+
+5. open the browser and navigate to <http://localhost:3000/>
+
+6. you should see the todo app.
