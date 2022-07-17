@@ -19,7 +19,7 @@ you will need nodejs and npm to run this project.
 
 3. run ```yarn install``` to install all the dependencies.
 
-4. run ```yarn dev``` to start the development server, or run ```yarn start``` to start the project.
+4. run ```yarn dev``` to start the development server, or run ```yarn build``` then ```yarn start``` to start the project in production mode.
 
 5. open the browser and navigate to <http://localhost:3000/>
 
