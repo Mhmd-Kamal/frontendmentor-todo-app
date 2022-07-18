@@ -1,14 +1,17 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
+import NewTodo from '../component/NewTodo';
+import TodosList from '../component/TodosList';
+
 const Home = () => {
   const todos = [
-    { id: 1, title: 'Learn Next.js', completed: true },
-    { id: 2, title: 'Learn React', completed: false },
-    { id: 3, title: 'Learn Tailwind', completed: false },
-    { id: 4, title: 'Learn Styled-Components', completed: false },
-    { id: 5, title: 'Learn GraphQL', completed: false },
-    { id: 6, title: 'Learn Apollo', completed: false },
+    { id: 1, text: 'Learn Next.js', status: true },
+    { id: 2, text: 'Learn React', status: false },
+    { id: 3, text: 'Learn Tailwind', status: false },
+    { id: 4, text: 'Learn Styled-Components', status: false },
+    { id: 5, text: 'Learn GraphQL', status: false },
+    { id: 6, text: 'Learn Apollo', status: false },
   ];
   return (
     <div className='flex flex-col items-stretch min-h-screen px-5 text-sm bg-no-repeat bg-mobile-light bg-light-Very-Light-Gray'>
@@ -22,26 +25,8 @@ const Home = () => {
         </button>
       </header>
       <main className='flex-grow '>
-        <div className='w-full bg-white rounded-md'>
-          <form
-            action='handleSubmit'
-            className='flex items-stretch gap-3 px-6 py-4'
-          >
-            <input
-              className='w-6 h-6 border rounded-full appearance-none border-light-Very-Light-Grayish-Blue focus:outline-none checked:gradient'
-              type='checkbox'
-              name='completed checkbox'
-              id='completed_checkbox'
-            />
-            <input
-              className='text-light-Very-Dark-Grayish-Blue focus:outline-none placeholder:text-xs'
-              placeholder='Create a new todo...'
-              type='text'
-              name='new todo'
-              id='new_todo'
-            />
-          </form>
-        </div>
+        <NewTodo />
+        <TodosList todos={todos} />
       </main>
       <footer className=''>
         <p className='pb-16 text-sm text-center text-light-Dark-Grayish-Blue'>
