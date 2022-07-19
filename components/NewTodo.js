@@ -8,6 +8,8 @@ function NewTodo() {
     event.preventDefault();
     console.log(checkbox.current.checked);
     console.log(text);
+    setText('');
+    checkbox.current.checked = false;
   }
 
   return (
@@ -26,7 +28,7 @@ function NewTodo() {
         <input
           onChange={(event) => setText(event.target.value)}
           value={text}
-          className='text-light-Very-Dark-Grayish-Blue focus:outline-none placeholder:text-xs'
+          className='flex-1 text-light-Very-Dark-Grayish-Blue focus:outline-none placeholder:text-xs'
           placeholder='Create a new todo...'
           type='text'
           name='text'

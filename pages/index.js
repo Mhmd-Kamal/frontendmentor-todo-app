@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-import NewTodo from '../component/NewTodo';
-import TodosList from '../component/TodosList';
+import NewTodo from '../components/NewTodo';
+import TodosList from '../components/TodosList';
 
 const Home = () => {
   const todos = [
